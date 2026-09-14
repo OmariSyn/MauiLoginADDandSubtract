@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiLoginPageforMath.MainPage"
+             Title="HomePage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="Omari Johnson- Add and Subtract Feilds"
+                FontSize="24"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="First Value"
+                FontSize="18" />
+            <Entry
+                x:Name="FirstValueEntry"
+                Placeholder="Enter first value"
+                Keyboard="Numeric" />
+
+            <Label
+                Text="Second Value"
+                FontSize="18" />
+            <Entry
+                x:Name="SecondValueEntry"
+                Placeholder="Enter second value"
+                Keyboard="Numeric" />
+
+            <HorizontalStackLayout Spacing="10">
+                <Button
+                    Text="Addition"
+                    Clicked="OnAdditionClicked" />
+                <Button
+                    Text="Subtraction"
+                    Clicked="OnSubtractionClicked" />
+            </HorizontalStackLayout>
+
+            <Label
+                x:Name="MessageLabel"
+                FontSize="18"
+                TextColor="Red"
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
